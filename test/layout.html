@@ -54,6 +54,94 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#main_header {
+    width: 960px;
+    margin: 0 auto;
+    height: 160px;
+    position: relative;
+}
+#main_header > #title {
+    position: absolute;
+    left: 20px; top: 30px;
+}  
+#main_header > #main_nav {
+    position: absolute;
+    right: 0px; top: 0px;
+}  
+#title {
+    font-family: 'Playfair Display', serif;
+    color: rgb(67, 39, 94);
+}    
+#title > h1 {
+    font-size: xx-large;
+}
+#title > h4 {
+    font-size: medium;
+}
+
+#main_nav > ul {overflow: hidden;}
+#main_nav > ul > li {float: left;}
+#main_nav > ul > li > a {
+    display: block;
+    padding: 2px 10px;
+    border: 1px solid blueviolet;
+}
+#main_nav > ul > li > a:hover {
+    background: blueviolet;
+    color: white;
+}
+#main_nav > ul > li:first-child > a {border-radius: 10px 0 0 10px;}
+#main_nav > ul > li:last-child > a {border-radius: 0 10px 10px 0;}
+
+input:nth-of-type(1) {display: none;} 
+input:nth-of-type(1) ~ div:nth-of-type(1) {display: none;}
+input:nth-of-type(1):checked ~ div:nth-of-type(1) {display: block;}
+
+input:nth-of-type(2) {display: none;} 
+input:nth-of-type(2) ~ div:nth-of-type(2) {display: none;}
+input:nth-of-type(2):checked ~ div:nth-of-type(2) {display: block;}
+
+section.buttons { overflow: hidden;}
+section: .buttons > label {
+    display: block; float: left;
+    width: 100px; height: 30px;
+    line-height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid blueviolet;
+    background: blueviolet;
+    color: white;
+}
+
+input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1) {
+    background: blueviolet;
+    color: white;
+}
+input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2) {
+    background: blueviolet;
+    color: white;
+}
+
+#content {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#content > #main_aside {
+    width: 200px;
+    float: left;
+} 
+#content > #main_section {
+    width: 750px;
+    float: right;
+}
+
+#main_section > article.main_article {
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid blueviolet;
+}
+
 #main_footer {
     width: 960px; margin: 0 auto;
     margin-bottom: 10px;
@@ -65,24 +153,34 @@ table {
     </style>
 </head>
 <body>
-    <header>
-        <h1><i>Hyej_Cho</i></h1>
+    <header id="main_header">
+        <div id="title">
+            <h1><i>Hyej_Cho</i></h1>
+            <br />
+             <h4>since 1996</h4>        
+             <link rel="preconnect" href="https://fonts.gstatic.com">
+             <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+        </div>
+        <nav id="main_nav">
+            <ul>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#etc">etc</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#About">About Me</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#etc">etc</a></li>
-        </ul>
-    </nav>
-    <aside>
+<!-- </header> -->
+
+    <div id="content">
+    <aside id="main_aside">
+        <input id="LANGUAGE" type="radio" name="tab" checked="checked" />
+        <input id="SKILL" type="radio" name="tab" />
+        <section class="buttons">
+            <label for="LANGUAGE">LANGUAGE</label>
+            <label for="SKILL">SKILL</label>
+        </section>
+        <div class="tab_item">
         <table>
-            <thead>
-            <tr> 
-                <th colspan="2">LANGUAGE</th>
-                <th></th>
-            </tr>
-            </thead>
             <tbody>
             <tr>
                 <td>Korean</td>
@@ -102,14 +200,10 @@ table {
             </tr>
             </tbody>
         </table>
+        </div>
 
+        <div class="tab_item">
         <table>
-            <thead>
-            <tr> 
-                <th colspan="2">SKILL</th>
-                <th></th>
-            </tr>
-            </thead>
             <tbody>
             <tr>
                 <td>Photoshop</td>
@@ -121,21 +215,29 @@ table {
             </tr>
             </tbody>
         </table>
+        </div>
     </aside>
-    <section>
-        <article>
-
+    <section id="main_section">
+        <article class="main_article">
             <h1 id="About">About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum, quisquam totam rem inventore ut obcaecati dolorem quod, beatae ab provident quae esse, quidem iusto molestiae. Qui doloremque dolorem vitae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum, quisquam totam rem inventore ut obcaecati dolorem quod, beatae ab provident quae esse, quidem iusto molestiae. Qui doloremque dolorem vitae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae dicta impedit tempore molestias placeat! Delectus laudantium natus praesentium harum illo facilis autem! Cupiditate possimus voluptate culpa veniam voluptas commodi id, iusto consequuntur placeat obcaecati sequi ipsum iste, aperiam blanditiis totam ducimus incidunt atque ab quos dignissimos! Magni error libero dolorum.</p>
+         </article>   
+         <article class="main_article">
             <h1 id="Education">Education</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum, quisquam totam rem inventore ut obcaecati dolorem quod, beatae ab provident quae esse, quidem iusto molestiae. Qui doloremque dolorem vitae.</p>
-            <h1 id="etc">ect</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum, quisquam totam rem inventore ut obcaecati dolorem quod, beatae ab provident quae esse, quidem iusto molestiae. Qui doloremque dolorem vitae.</p>
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum, quisquam totam rem inventore ut obcaecati dolorem quod, beatae ab provident quae esse, quidem iusto molestiae. Qui doloremque dolorem vitae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum, quisquam totam rem inventore ut obcaecati dolorem quod, beatae ab provident quae esse, quidem iusto molestiae. Qui doloremque dolorem vitae.</p>
+       
         </article>
+            <article class="main_article">
+            <h1 id="etc">ect</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum, quisquam totam rem inventore ut obcaecati dolorem quod, beatae ab provident quae esse, quidem iusto molestiae. Qui doloremque dolorem vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatibus accusamus earum velit repellat optio, sapiente illo quos saepe doloremque recusandae obcaecati amet aliquam quibusdam delectus nobis voluptas facere eos temporibus omnis eum? Quisquam dolorem nulla tempora nisi, hic distinctio aperiam praesentium unde amet quo ullam iste molestiae qui repellendus.</p>
+        </article>
+        
     </section> 
+    </div>
     
-    <hr />
     <footer id="main_footer"> 
         <h3>CHO HYE JIN &copy; </h3>
         <address>hyejin2338@gmail.com</address>
