@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    input:enabled {background-color: rgb(236, 236, 221);}
+    input:disabled {background-color: teal;}
+    input:focus {background-color: yellowgreen;}
+
+    input[type=checkbox]:checked + div {
+        height: 0px;
+    }
+    div {
+        overflow: hidden;
+        width: 650px;
+        height: 300px;
+        -ms-trasition-duration: 1s;
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        transition-duration: 1s;
+    }
+</style>
+</head>
+
+<body>
+    <h2>Enabled</h2>
+    <input  />
+    <h2>disabled</h2>
+    <input disabled="disabled" />
+
+    <br />
+    <input type="checkbox" />
+    <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
