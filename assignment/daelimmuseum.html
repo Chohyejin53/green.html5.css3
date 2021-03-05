@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daelimmuseum</title>
+    <style>
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 초기화완료 */
+
+#title > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+a { text-decoration: none; 
+    color: black;
+    }
+
+#header .menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.menu ul {overflow: hidden;}
+.menu ul > li {float: right;}
+.menu ul > li > a {
+    display: block;
+    padding: 2px 10px;
+    
+}
+.menu ul > li > a:hover {
+    background: white;
+    color: coral;
+}
+.menu ul > li:first-child > a {border-radius: 0 0px 0px 0;}
+.menu ul > li:last-child > a {border-radius: 0px 0 0 0px;}
+
+.menu > #nav1 {
+    float: left;
+}
+.menu > #nav2 {
+    float:right;
+}
+
+#main_section > img {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+#main_footer {
+    width: 960px; margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px 0 0 0 solid rgb(218, 209, 131);
+    color:#000;
+    text-align: center;
+}
+#main_footer > .address {
+    float: left;
+    margin: 10px 20px;
+}
+    </style>
+</head>
+<body>
+    <header id="main_header">
+        <div id="title">
+                <h1>DAELIM MUSEUM</h1> 
+            <link rel="preconnect" href="https://fonts.gstatic.com"> 
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        </div>    
+
+        <div class="menu">
+        <nav id="nav1">
+            <ul>
+                <li><a href="#">대림문화재단</a></li>
+                <li><a href="#">대림미술관</a></li>
+                <li><a href="#">디뮤지엄</a></li>
+                <li><a href="#">구슬모아당구장</a></li>
+            </ul>
+        </nav>
+
+        <nav id="nav2">
+            <ul>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">JOIN</a></li>
+                <li><a href="#">SNS</a></li>
+                <li><a href="#">ENG</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>       
+
+    <section id="main_section">
+        <img src="mainimg.png" alt="daelimmuseum">
+    </section>
+
+    <footer id="main_footer">
+        <div class="address">
+            <p>대림미술관</p> <br /> 
+            <address>
+                <span> 서울특별시 종로구 자하문로4길 21</span><br /> 
+                <span>지번주소 : 통의동 35-1</span>
+            </address><br />
+            <p> T. 02-720-0667  F. 02-720-0665</p> 
+        </div>
+        <div class="address">
+            <p>D MUSEUM</p> <br /> 
+            <address>서울특별시 성동구 왕십리로 83-21, 디뮤지엄</address><br />
+            <p>T. 070-5097-0020</p> 
+       </div>
+       <div class="address">
+        <p>D PROJECT SPACE</p><br />
+        <p>구슬모아당구장</p> <br /> 
+        <address>서울특별시 종로구 종로3길 17 D타워 126호</address><br />
+        <p>T.02-3785-0667</p> 
+   </div>
+    </footer>
+
+</body>
+</html>
