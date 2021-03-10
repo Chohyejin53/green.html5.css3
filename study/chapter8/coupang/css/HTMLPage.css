@@ -126,15 +126,16 @@ body { position: relative; }
 #bottom_gnb > div.item_9:active { background-position: 0px -1440px; }
 #bottom_gnb > div.item_10:active { background-position: 0px -1520px; }
 
-#
-#detail_list {
+/* #detail_list {
     background: black;
+    opacity: 0.9;
+    
 }    
 
 #detail_list > ul {
     display: inline-block;
-    margin: 10px 10px;
-    color: ;
+    margin: 10px 15px;
+    color: white;
 }
 
 #detail_list > ul > li {
@@ -145,3 +146,24 @@ body { position: relative; }
     font-weight: bold;
     color: skyblue;
 }
+ */
+
+ #detail_list { 
+     overflow: hidden;
+     padding: 10px;
+     background: gray;
+padding-bottom: ;
+ }
+
+ #detail_list > ul {
+
+ #detail_list > ul > li {
+     height: 12px;
+     margin-top: 5px;
+     padding: 3px 5px;
+     color: white;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
