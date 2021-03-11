@@ -1,0 +1,96 @@
+@charset "USF-8"
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+a { text-decoration: none; }
+img { border: 0; }
+li { list-style: none; }
+
+body {
+    width: 980px;
+    height: 100%;
+    min-width: 720px;
+    margin: 0 auto;
+}
+
+#main_header {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+}
+#title > h1 {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 3em;
+    float: left;
+    width: 360%;
+}
+#main_header > #nav_login {
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    padding: 10px;
+    top: 20px;
+    right: 0px; 
+    background: rgb(238, 238, 238);
+    opacity: 0.7;
+    align-content: center;
+}
+
+#nav_login > span {
+    margin: 3px;
+}
+
+a { color: rgb(63, 63, 63); }
+a:visited { color: black;}
+
+#content {
+    position: relative;
+    overflow: hidden;
+}
+#content > #aside {
+    float: left;
+    width: 360px;
+}
+
+#aside > .left_aside {
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+#aside > .left_aside > li {
+    width: 300px;
+    margin: 50px 0px;
+}
+
+#main_section {
+    position: absolute;
+    top: 0;
+    left: 380px;
+    float: right;
+}
+
+#fnb {
+    margin: 30px 10px ;
+}
+
+#fnb > span {
+    margin: 10px;
+}
+
+#main_footer {
+    overflow: hidden;
+    background: rgb(239, 229, 248);
+}
+
+#main_footer > .information {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    width: 50%;
+
+}
