@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px 'Dotum';
+}
+a { text-decoration: none; }
+img { border: 0; }
+li { list-style: none; }
+
+body {
+    height: 100%;
+    min-width: 900px;
+}

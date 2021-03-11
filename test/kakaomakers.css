@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px 'Dotum';
+}
+a { text-decoration: none; }
+img { border: 0; }
+li { list-style: none; }
+
+body {
+    width: 720px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+#main_header {
+    position: relative;
+    height: 50px;
+}
+
+#main_header {
+    position: absolute;
+    left: 240px;
+    top: 10px;
+}
+
+#title > h1 {
+    font-size: 30px;
+}
+#title > h1 > strong {
+    font-size: 30px;
+    font-weight: bold;
+}
+

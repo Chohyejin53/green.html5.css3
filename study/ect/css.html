@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 우선순위 연습</title>
+    <style>
+        p { color: blueviolet !important; }
+        #para { color: blanchedalmond;}
+        .para { color: blue;}
+
+        span {
+            color: blue;
+            color: cadetblue;
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <p id="para" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum autem harum voluptatem molestias quas asperiores, libero veniam sequi fugit quia pariatur excepturi tempora tempore assumenda deleniti eaque! Assumenda, incidunt ad.</p>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+</body>
+</html>
