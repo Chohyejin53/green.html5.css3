@@ -1,0 +1,59 @@
+@charset "USF-8"
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+a { text-decoration: none; }
+img { border: 0; }
+li { list-style: none; }
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    min-width: 720px;    
+}
+
+#main_header {
+    position: relative;
+    height: 200px;
+}
+
+a { color: rgb(11, 11, 43);}
+a:visited { color: rgb(179, 146, 0);}
+
+#main_header > #nav_cart {
+    position: absolute;
+    height: 70px;
+    padding: 10px;
+    top: 10px;
+    right: 0px; 
+}   
+
+#nav_cart > span {
+    display: block;
+    margin-left: 40px;
+}
+
+#nav_gnb > .menu { 
+    display: block;
+    margin: 0 auto;
+}
+
+.menu  > span {
+    margin: 10px 20px;
+}
+
+#main_footer {
+    width: 960px
+}
+
+#main_footer > .footer_inform {
+    background :rgb(11, 11, 43); 
+}
+
+#main_footer > #fnb {
+    background :rgb(11, 11, 43); 
+}
