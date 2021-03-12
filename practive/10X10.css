@@ -134,15 +134,3 @@ body {
 
 
 /* 푸터 */
-
-#main_footer {
-    overflow: hidden;
-    width: 1440px;
-    margin: 0 auto;
-}
-
-#main_footer > #fnb {
-    float: left;
-    margin-left: 10px;
-
-}

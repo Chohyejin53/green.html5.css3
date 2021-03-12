@@ -31,11 +31,11 @@ body {
 }
 #main_header > #nav_login {
     position: absolute;
-    width: 180px;
+    width: 200px;
     height: 70px;
     padding: 10px;
     top: 20px;
-    right: 0px; 
+    right: 2px; 
     background: rgb(238, 238, 238);
     opacity: 0.7;
     align-content: center;
