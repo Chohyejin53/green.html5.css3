@@ -21,8 +21,8 @@ body {
     height: 20px;
 }
 
-a { color: rgb(11, 11, 43);}
-a:visited { color: rgb(179, 146, 0);}
+a { color: rgb(179, 146, 0);}
+a:visited { color: rgb(255, 188, 2);}
 
 #main_header > #nav_cart {
     position: absolute;
