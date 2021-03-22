@@ -3,10 +3,22 @@ var temp = [10.2, 14.3, 17.2, 18.0];
 var rain = [10, 50, 10, 5];
 var dust = [40, 60, 70, 90];
 
-var day1 = [];
-var day2 = [];
-var day3 = [];
-var day4 = [];
+// var day1 = [];
+// var day2 = [];
+// var day3 = [];
+// var day4 = [];
+
+// for(var i = 1; i < date.length; i++) {
+//     i = [date.slice(i), temp.slice(i), rain.slice(i), dust.slice(i)];
+//     var day = [date.shift(), temp.shift(), rain.shift(), dust.shift()];
+//     i += i;
+//     console.log(i,"<br />");
+// }
+
+    // for(var i = 0; i < date.length; i++) {
+    //     i = [date[i], temp[i], rain[i], dust[i]];
+    //     console.log(i);
+    // }
 
 // for(var i = 0; i < date.length; i++) {
 //     console.log(date[i]);
