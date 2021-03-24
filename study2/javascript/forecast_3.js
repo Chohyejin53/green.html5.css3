@@ -47,7 +47,7 @@ function Forecast(arr) {
 Forecast.prototype.show = function(){
     var str = "";
     for(var i = 0; i < this.foreCastArr.length; i++) {
-        str += this.foreCastArr[i] + this.unit(arr);
+        str += this.foreCastArr[i] + this.unit(this.foreCastArr);
     }
 
     return str;
@@ -62,7 +62,7 @@ Forecast.prototype.avgShow = function(){
 
     var avg = num / this.foreCastArr.length;
     
-    return avg.toFixed(1) + this.unit();
+    return avg.toFixed(1) + this.unit(this.foreCastArr);
     
 };
 
