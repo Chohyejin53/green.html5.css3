@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var num1 = prompt();
-        var num2 = prompt();
-        var num3 = prompt();
+        var num1 = prompt("신장을 입력하시오", "0");
+        var num2 = prompt("신장을 입력하시오", "0");
+        var num3 = prompt("신장을 입력하시오", "0");
 
-        sum = num1 + num2 + num3;
-        avg = (num1 + num2 + num3) / 3
-        
+        var sum = Number(num1 + num2 + num3);
+
+        document.write(sum);
+        var avg = (num1 + num2 + num3) / 3
+        //document.write(avg);
     </script>
 </head>
 <body>
