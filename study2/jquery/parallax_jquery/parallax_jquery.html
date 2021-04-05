@@ -57,9 +57,28 @@
             });
 
             $(window).resize(function(){
-                $(".container").width($(window).width())
+                $(".container").width($(window).width()).height($(window).height());
+                $(".content").each(function(){
+                    $(this).css("margin-left", ($(this).width()/2 * -1) + "px")
+                           .css("margin-top", ($(this).height()/2 * -1) + "px");
+                });
+            });
+
+            setTimeout(function(){
+                $(window).resize();
+            }, 1000);  // 사이트에 처음들어왔을때 브라우저 크기가 다르기때문에 1초뒤에 해상도와 브라우저 크기 조정해줌 (기법!)
+            
+            $(".bg-holder").parallaxScroll({
+                friction: 0.3 // 0~1까지 사용할 수 있고 클수록 차이가 많이남
+            });
+
+            $(".icon img").hover(function(){
+                $(this).attr("src", $(this).attr("src").replace(".png", "_over.png"));
+            }, function(){
+                $(this).attr("src", $(this).attr("src").replace("_over.png", ".png"));
             });
         });
     </script>
 </body>
 </html>
+
