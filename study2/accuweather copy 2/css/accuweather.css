@@ -54,9 +54,14 @@ ul { list-style: none; }
     position: relative;
 }
 .nav > .menu_1 {
+    background: black;
+    position: absolute;
     width: 100%;
     top: 60px;
-    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
 }
 
 .menu_1 > li {

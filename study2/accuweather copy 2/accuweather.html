@@ -17,6 +17,7 @@
                 </div>
                 <ul class="nav">
                     <li><a href="#">레이더 및 지도</a></li>
+                    
                     <ul class="menu_1">
                         <li>
                             <h3>레이더 및 지도</h3>
@@ -35,7 +36,7 @@
                             <p>강수량이 높은 지역과 수치를 나타내는 대한민국 국가 지도</p>
                         </li>
                     </ul>
-
+                    
                     <li><a href="#">동영상</a></li>
                     <li><a href="#">악천후 기상</a></li>
                 </ul>
@@ -58,12 +59,12 @@
             var nav = ".nav li"
             var menu = ".nav .menu_1"
 
-            $(".nav.menu_1").hide();
             $(nav).hover(function(){
-                $("menu_1:not(:animated)", this).slideDown("fast");
-            },
-            function(){
-                $("menu_1", this).slideUp("fast");
+            if($(menu).css("display") == "none"){
+                $(menu).show();
+            } else {
+                $(menu).hide();
+            };
             });
         });
     </script>
