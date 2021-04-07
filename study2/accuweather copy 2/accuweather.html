@@ -58,8 +58,12 @@
             var nav = ".nav li"
             var menu = ".nav .menu_1"
 
+            $(".nav.menu_1").hide();
             $(nav).hover(function(){
-                $(menu).fadeIn();
+                $("menu_1:not(:animated)", this).slideDown("fast");
+            },
+            function(){
+                $("menu_1", this).slideUp("fast");
             });
         });
     </script>
