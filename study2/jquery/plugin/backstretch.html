@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backstretch.html</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+    #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        color: #aff500;
+        font-family: 'Courgette', cursive;
+        font-size: 7em;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 2px 2px 3px #222, 2px 2px 3px black;
+    }
+    </style>
+</head>
+<body>
+    <!-- https://www.jquery-backstretch.com/ 플러그인 사이트 -->
+    <div id="content">
+        <h1>Startup Company</h1>
+    </div>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+        $(function(){
+            $.backstretch([
+                "images/office-1.jpg", "images/office-2.jpg", "images/office-3.jpg"
+            ], {duration:3500, fade:750}); // 여려 매개변수는 배열로 가져오기, 중괄호 속에 지속시간은 duration, 흐림정도는 fade로 조절
+            
+        });
+    </script>
+</body>
+</html>

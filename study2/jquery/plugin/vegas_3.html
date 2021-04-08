@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas</title>
+    <link rel="stylesheet" href="js/vegas/vegas.min.css">
+    <style>
+        #content {
+            position: absolute;
+            left: 10%;
+            top: 40%;
+            margin-right: 50px;
+            padding: 30px 50px;
+            background: rgba(35,35,35,0.1);
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        p {
+            padding-top: 20px;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 2em;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        a, a:visited {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- https://vegas.jaysalvat.com/ -->
+    <!-- js사용법은 ReadMe 확인하고 사용하기!! -->
+    <div id="content">
+        <h1>Fullscreen Background Image</h1>
+        <p>
+            <strong>
+                <a href="http://vegas.jaysalvat.com/">Vegas.js</a>
+            </strong> 플러그인을 이용한<br>풀스크린 배경이미지
+        </p>
+    </div>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/vegas/vegas.min.js"></script>
+    <script>
+        $(function(){
+            $('body').vegas({
+                slides:[
+                    {src:'images/nature-1.jpg'},
+                    {src:'images/nature-2.jpg'},
+                    {src:'images/nature-3.jpg'},
+                    {src:'images/swans.jpg', // 동영상이 안나올때 나오는 대체이미지!
+                    video: {
+                        src: ['videos/swans.mp4'],
+                        loop: false,
+                        mute: true
+                        }
+                    }
+                ], delay:3500
+            });
+        });
+    </script>
+<!-- vegas 플러그인은 동영상도 가능하고, 사진과 동영상을 혼재해서 사용도 가능함! -->
+</body>
+</html>
