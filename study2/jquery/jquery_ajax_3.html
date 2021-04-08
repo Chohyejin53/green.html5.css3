@@ -9,18 +9,28 @@
     <script>
         $(function(){
             $.ajax({
-                url:"MOCK_DATA.json",
-                dataType:"json",
+                url:"dataset.xml",
+                dataType:"xml",
                 success:function(data) {
-                    if(data.length > 0) {
+                    var $data = $(data).find("record");
+                    if($data.length > 0) {
                         var tb = $("<table />");
-                        for(var i in data) {
-                            var $id = data[i].id;
-                            var $first_name = data[i].first_name;
-                            var $last_name = data[i].last_name;
-                            var $email = data[i].email;
-                            var $gender = data[i].gender;
+                        $.each($data, function(i, o) {
+                            var $id = 
+                            $(o).find("id").text();
 
+                            var $first_name = 
+                            $(o).find("first_name").text();
+
+                            var $last_name = 
+                            $(o).find("last_name").text();
+
+                            var $email = 
+                            $(o).find("email").text();
+
+                            var $gender = 
+                            $(o).find("gender").text();
+                            
                             var row = $("<tr />").append(
                                 $("<td />").text($id),
                                 $("<td />").text($first_name),
@@ -30,7 +40,7 @@
                             );
 
                             tb.append(row);
-                        }
+                        });
                         $(".wrap").append(tb);
                     }
                 }
