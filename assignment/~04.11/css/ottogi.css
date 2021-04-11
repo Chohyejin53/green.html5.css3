@@ -23,7 +23,7 @@ ul { list-style: none; }
     height: 230px;
 }
 
-#main_header > .logo_container {
+.header_wrap > .logo_container {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -47,6 +47,7 @@ ul { list-style: none; }
     float: left;
     top: 10px;
     left: 10px;
+    color: rgb(208, 20, 40);
 }
 
 .logo_container .trigger_bar {
@@ -55,6 +56,7 @@ ul { list-style: none; }
     float: left;
     top: 30px;
     left: 10px;
+    color: rgb(208, 20, 40);
     display: none;
 }
 
@@ -89,14 +91,14 @@ ul { list-style: none; }
     display: none;
 }
 /* 네비게이션 */
-#main_header > .gnb_container {
-    width: 1024px;
+.header_wrap > .gnb_container {
+    width: 100%;
     height: 77px;
     margin: 0 auto;
 }
 
 .gnb_container .gnb {
-    width: 1024px;
+    width: 100%;
     overflow: hidden;
     text-align: center;
     display: block;
@@ -110,7 +112,7 @@ ul { list-style: none; }
 
 .gnb li {
     float: left;
-    width: 15%;
+    width: 16.4%;
     height: 20px;
     font-size: 1.1em;
     text-align: center;
@@ -129,7 +131,7 @@ ul { list-style: none; }
     color: rgb(208, 20, 40);
 }
 
-#main_header > .active_path > .active_bar {
+.header_wrap > .active_path > .active_bar {
     width: 81px;
     height: 3px;
     margin: 0px;
@@ -138,7 +140,7 @@ ul { list-style: none; }
 }
 
 /* 드롭다운메뉴 */
-#main_header .lnb {
+.header_wrap .lnb {
     width: 100%;
     height: 245px;
     background: white;
@@ -150,7 +152,7 @@ ul { list-style: none; }
     width: 100%;
     height: 245px;
     padding:  25px 0px;
-    margin: 0 20px;
+    margin-left: 0 40px;
     display: block;
 }
 
@@ -159,7 +161,6 @@ ul { list-style: none; }
     float: left;
     width: 49%;
     margin-left: 30px;
-    border-right: 1px solid rgb(153, 153, 153);
 }
 
 .lnb_left_menu > li {
@@ -198,6 +199,7 @@ ul { list-style: none; }
     padding: 5px 0;
     text-align: center;
     border: 2px solid rgb(153, 153, 153);
+    padding: 5px 7px;
 }
 
 /* 컨텐츠 */
@@ -240,5 +242,9 @@ ul { list-style: none; }
 }
 
 @media screen and (min-width: 1025px) {
-    
+
+    #main_header > .header_wrap {
+        width: 1024px;
+        margin: 0 auto;
+    }
 }
