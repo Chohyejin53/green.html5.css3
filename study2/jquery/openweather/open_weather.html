@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            var url = "http://api.openweathermap.org/data/2.5/weather";
+                url +="?q=" + "incheon";
+                url +="&units=" + "metric";
+                url +="&lang=" + "kr";
+                url +="&APPID=" + "1424895fa6cdf19bf3d69f7a75161a3b";
+
+                console.log("url:" + url);
+            
+            // $.ajax({
+            //     type:"GET",
+            //     url: url,
+            //     dataType:"json",
+            //     success:function(data) {
+
+            //     }
+            // });
+        });
+    </script>
+</body>
+</html>
