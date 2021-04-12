@@ -208,14 +208,7 @@ ul { list-style: none; }
 }
 
 /* 컨텐츠 */
-#content {
-    width: 100%;
-}
 
-#content > .visual {
-    width: 1920px;
-    height: 530px;
-}
 /* 푸터 */
 
 
