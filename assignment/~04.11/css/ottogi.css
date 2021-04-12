@@ -154,6 +154,11 @@ ul { list-style: none; }
     padding:  25px 0px;
     margin-left: 0 40px;
     display: none;
+    color: black;
+}
+
+.lnb_menu a {
+    color: rgb(70, 70, 70);
 }
 
 .lnb .lnb_left_menu {
