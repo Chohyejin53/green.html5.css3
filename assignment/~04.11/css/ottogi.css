@@ -153,7 +153,7 @@ ul { list-style: none; }
     height: 245px;
     padding:  25px 0px;
     margin-left: 0 40px;
-    display: block;
+    display: none;
 }
 
 .lnb .lnb_left_menu {
@@ -203,7 +203,14 @@ ul { list-style: none; }
 }
 
 /* 컨텐츠 */
+#content {
+    width: 100%;
+}
 
+#content > .visual {
+    width: 1920px;
+    height: 530px;
+}
 /* 푸터 */
 
 

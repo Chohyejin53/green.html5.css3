@@ -13,25 +13,27 @@ $(function(){
 });
 
 // 네비게이션바 슬라이드토글
-$(document).ready(function(){
+$(function(){
+        var gnb1 = $(".gnb .li_1");
+        var menu1 = $(".intro_menu");
 
-    btn = $('gnb'); //버튼 아이디 변수 선언
+        $(gnb1).on("click", function(e){
+            e.preventDefault();
+            menu1.slideToggle();
+            });
 
-    layer = $('.lnb'); //레이어 아이디 변수 선언
+        var gnb2 = $(".gnb .li_2");
+        var menu2 = $(".pr_menu");
 
-    btn.click(function(){
+        $(gnb2).on("click", function(e){
+            e.preventDefault();
+            menu2.slideToggle();
+            });
+        var gnb3 = $(".gnb .li_3");
+        var menu3 = $(".service_menu");
 
-        layer.toggle(
-
-        function(){
-            $(layer).css("display", "block");
-         }, //클릭하면 show클래스 적용되서 보이기
-
-        function(){
-            $(layer).css("display", "none");
-         } //한 번 더 클릭하면 hide클래스가 숨기기
-    );
-
-    });
-
-});
+        $(gnb3).on("click", function(e){
+            e.preventDefault();
+            menu3.slideToggle();
+            });
+}); 
