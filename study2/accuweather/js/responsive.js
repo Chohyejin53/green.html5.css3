@@ -11,7 +11,7 @@ $(function(){
             }
 
             gnbIndex = $(this).index();
-            gnbFlag = true;
+            gnbFlag = true; // gnb에 마우스를 오버했는지 안했는지 알려줌, 오버하면 트루 값으로 바뀜 
 
             $("lnb_container").removeClass("appear");
             $("lnb_container").addClass("disappear");
