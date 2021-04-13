@@ -19,14 +19,22 @@
 
                 console.log("url:" + url);
             
-            // $.ajax({
-            //     type:"GET",
-            //     url: url,
-            //     dataType:"json",
-            //     success:function(data) {
-
-            //     }
-            // });
+                $.ajax({
+                    type:"GET",
+                    url:url,
+                    dataType:"json",
+                    success:function(data) {
+                        console.log("data:"+ data);
+                        console.log(JSON.stringify(data)); // 받아온 데이터를 텍스트 형태로 변환 
+                        console.log("현재온도:" + data.main.temp);
+                        console.log("현재풍속:" + data.wind.speed + "m/s");
+                    },
+                    error:function(request,status,error) {
+                        console.log("code:" + request.status);
+                        console.log("message:" + request.responseText);
+                        console.log("error:" + error);
+                    }
+            });
         });
     </script>
 </body>
