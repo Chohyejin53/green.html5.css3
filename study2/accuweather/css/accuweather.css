@@ -78,6 +78,7 @@ ul { list-style: none; }
 }
 
 /* active_path, active_bar */
+
 #main_header > .active_path {
     position: fixed; /* 핵심!! - 스크롤했을때 고정되어있어야하기때문!  */
     width: 100%;
@@ -95,6 +96,7 @@ ul { list-style: none; }
 }
 
 /* 하위메뉴 애니메이션 */
+
 #main_header > .lnb_container {
     display: none;
     background: black;
@@ -121,7 +123,6 @@ ul { list-style: none; }
 .hide {
     display: none;
 }
-
 /* 공부를 위해서 배우는 애니메이션! 보통 제이쿼리로도 가능! */
 .appear {
     animation: fade-in 0.5s;

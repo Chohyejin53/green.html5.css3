@@ -6,7 +6,7 @@ $(function(){
         "mouseenter" : function() {
             /* lnb show */
 
-            if(fnbFlag != undefined) {
+            if(gnbFlag != undefined) {
                 $("lnb").eq(gnbIndex).css("display","none");
             }
 
@@ -21,7 +21,7 @@ $(function(){
         },
         "mouseleave" : function() {
 
-        },
+        }
     });
 
 
