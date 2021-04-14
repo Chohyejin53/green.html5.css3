@@ -152,8 +152,15 @@ ul { list-style: none; }
 
 /* 콘텐츠 */
 #main_content {
-    height: 1000px; 
+    background: #d8d8d8;
 }
+
+/* 푸터 */
+#main_footer {
+    background: white;
+    height: 150px;
+}
+
 
 /* 모바일메뉴 */
 #mobile_menu {

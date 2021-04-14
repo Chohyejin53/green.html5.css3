@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2e65383dc11fc07e706766249a04cb93"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.45240609232767, 126.69969111326523),
+            // 구글지도를 통해서 위경도 얻을 수 있음 
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+        // console.log(map.getCenter());
+
+        var marker = new kakao.maps.Marker({
+    map: map,
+    position: new kakao.maps.LatLng(37.45240609232767, 126.69969111326523)
+});
+
+    marker.setMap(map);
+	</script>
+</body>
+</html>
