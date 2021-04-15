@@ -26,6 +26,7 @@ ul { list-style: none; }
     height: 60px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 #main_header .gnb {
@@ -85,6 +86,7 @@ ul { list-style: none; }
     height: 1px;
     background: #d8d8d8;
     top: 60px;
+    z-index: 1;
 }
 
 #main_header > .active_path > .active_bar {
@@ -104,6 +106,7 @@ ul { list-style: none; }
     width: 100%;
     position: fixed; /* 핵심!! - 스크롤했을때 고정되어있어야하기때문!  */
     top: 61px;     /* 라인이 하나 들어갔기때문에 60+1 */
+    z-index: 1;
 }
 
 #main_header > .lnb_container > .lnb {
@@ -161,8 +164,7 @@ ul { list-style: none; }
     height: 150px;
 }
 
-
-/* 모바일메뉴 */
+/* 모바일 메뉴 */
 #mobile_menu {
     display: none;
     background: black;
@@ -170,7 +172,7 @@ ul { list-style: none; }
     height: 100vh;
     width: 100vw;
     overflow: hidden;  /* 뷰포트 스크롤 방지 */
-    position: fiexd;   /* 뷰포트 스크롤 방지 */
+    position: fixed;   /* 뷰포트 스크롤 방지 */
     top: 61px;
 }
 
@@ -198,7 +200,7 @@ ul { list-style: none; }
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     #main_header .gnb, .lnb {
         width: 90vw;
     }

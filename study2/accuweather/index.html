@@ -70,9 +70,43 @@
                 </article>
                 <article id="weather_location">
                     <h5>대한민국 기상 상태</h5>
+                    <div id="forecast">
+                        <a href="#">
+                            <span class="q">서울특별시</span>
+                            <span class="icon_weather"><img src="img/weather/svg/016-sun.svg" alt="맑음"></span>
+                            <span class="temp">-°C</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">인천광역시</span>
+                            <span class="icon_weather"><img src="img/weather/svg/016-sun.svg" alt="맑음"></span>
+                            <span class="temp">-°C</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">부산광역시</span>
+                            <span class="icon_weather"><img src="img/weather/svg/009-wind-1.svg" alt="바람"></span>
+                            <span class="temp">-°C</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">광주광역시</span>
+                            <span class="icon_weather"><img src="img/weather/svg/007-rain.svg" alt="비"></span>
+                            <span class="temp">-°C</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">제주시</span>
+                            <span class="icon_weather"><img src="img/weather/svg/006-cloudy-1.svg" alt="흐림"></span>
+                            <span class="temp">-°C</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">전주시</span>
+                            <span class="icon_weather"><img src="img/weather/svg/016-sun.svg" alt="맑음"></span>
+                            <span class="temp">-°C</span>
+                        </a>
+                    </div>
                 </article>
                 <article id="weather_add">
-                    추가 기상 예보 대한민국개
+                    <div id="add">
+                        추가 기상 예보 대한민국개
+                    </div>
                 </article>
             </section>
             <aside id="main_aside">
@@ -95,7 +129,11 @@
     </footer>
 
     <!-- 함수의 호이스트가 안되는 경우도 있으므로 js 파일은 순서가 중요함!! -->
+    <!-- 라이브러리 -->
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2e65383dc11fc07e706766249a04cb93"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- accuweather -->
+    <script src="js/map.js"></script>
     <script src="js/responsive.js"></script>
     <script src="js/forecast.js"></script>
     <script src="js/main.js"></script>
