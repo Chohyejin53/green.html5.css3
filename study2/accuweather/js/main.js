@@ -12,6 +12,7 @@ var cityList = ["seoul", "incheon", "busan", "gwangju", "jeju", "jeonju"];
    백엔드 서버 접속은 최대한 자주 안할수록 좋음.
    https://openweathermap.org/current 사이트에 여러지역을 한꺼번에 불러오는 방법도 있으므로 참고. 
    우선 한지역만 불러오는 방식을 이용해 아래와 같이 코딩 */
+   
 $(function(){
     $(".temp").each(function(i) { //each는 for문이랑 같은거! function(i) 로 인덱스 하나씩 실행! 
         $(this).text(forecast.getCurrentTemp(cityList[i]) + "°C");
