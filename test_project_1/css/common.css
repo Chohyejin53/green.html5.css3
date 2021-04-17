@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url(reset.css); 
+
+/* 헤더 */
+#header_wrap {
+    width: 100%;
+}
+
+.main_header {
+    width: 1024px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0  auto;
+}
+
+.main_header > #title {
+    float: left;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.main_header > .nav_wrap {
+    float: right;
+    width: 300px;
+    margin-top: 20px;
+}
+.nav_wrap > .gnb {
+    overflow: hidden;
+}
+
+.gnb > li {
+    float: left;
+    margin-left: 10px;
+}
+
+
+/* 푸터 */
+#footer_wrap {
+    width: 100%;
+}
+#main_footer {
+    width: 1024px;
+    margin: 0 auto;
+    height: 30px;
+}
+
+#main_footer > .sns {
+    overflow: hidden;
+}
+
+.sns > li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}

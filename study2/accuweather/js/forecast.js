@@ -1,7 +1,7 @@
 /*객체 선언*/
 function Forecast() {
     this.url = "http://api.openweathermap.org/data/2.5/weather";
-    this.url +="?units=" + "metric"; /*첫줄에만 ?, 그 이후엔 & */
+    this.url +="?units=" + "metric"; 
     this.url +="&lang=" + "kr";                
     this.url +="&APPID=" + "1424895fa6cdf19bf3d69f7a75161a3b";
     this.url +="&q=";
@@ -10,7 +10,7 @@ function Forecast() {
 // 현재날씨의 모든 정보 얻어오기
 
 Forecast.prototype.getCurrentWeather = function(city) {
-  
+
     var dataObj;
     var openWeatherAPI = this.url; //q가 계속 붙음으로 url 초기화를 위해 반드시 넣어준다
             
