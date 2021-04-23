@@ -26,7 +26,7 @@
 
 .main_header > .nav_wrap {
     float: right;
-    width: 250px;
+    width: 300px;
     margin-top: 20px;
 }
 .nav_wrap > .gnb {
@@ -52,14 +52,30 @@
 #footer_wrap {
     width: 100%;
 }
+
 #main_footer {
     width: 1024px;
     margin: 0 auto;
-    height: 30px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#main_footer > .bottom_logo {
+    float: left;
+    margin: 20px 30px;
+    width: 250px;
+}
+
+#main_footer > .bottom_logo > img {
+    width: 250px;
+    height: 100px;
 }
 
 #main_footer > .sns {
+    width: 600px;
+    float: left;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 .sns > li {

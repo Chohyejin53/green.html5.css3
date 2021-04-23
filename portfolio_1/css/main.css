@@ -45,7 +45,7 @@
     line-height: 350px;
 }
 
-/* 미술관장인사말(director's Message) */
+/* 소개 */
 #main_content > .intro_wrap {
     margin-top: 100px;
     width: 100%;
@@ -53,6 +53,7 @@
     background-color: #f4f5f9;
 }
 
+/* 미술관장인사말(director's Message) */
 .intro_wrap > .message {
     width: 1024px;
     margin: 0 auto;
@@ -61,7 +62,7 @@
 
 .intro_wrap > .message > .message_txt {
     float: left;
-    width: 45%;
+    width: 500px;
     margin: 50px 10px;
 }
 
@@ -81,49 +82,8 @@
 
 .intro_wrap > .message > .message_img {
     float: left;
-    width: 45%;
-    margin: 50px 10px;
+    width: 500px;
+    margin: 100px 0px 100px auto;
 }
 
 
-/* 미술관 역사(history) */
-.intro_wrap > .history {
-    margin-top: 30px;
-    width: 1024px;
-    margin: 0 auto;
-}
-
-.intro_wrap > .history > .video {
-    float: left;
-    width: 45%;
-    margin: 50px 10px;
-}
-
-.intro_wrap > .history > .museum_hisory {
-    float: left;
-    width: 45%;
-    margin: 50px 10px;
-}
-
-.intro_wrap > .history > .museum_hisory > h2 {
-    font-family: 'Fraunces', serif;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.intro_wrap > .history > .museum_hisory > h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    margin-top: 10px;
-
-}
-
-.intro_wrap > .history > .museum_hisory > p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1em;
-    line-height: 1.5em;
-    margin-top: 10px;
-}
