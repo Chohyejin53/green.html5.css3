@@ -25,43 +25,98 @@ iframe {
     z-index: -99;
 }
 
-/* 미술관 역사(history) */
-.video_container > .history {
-    margin-top: 30px;
+/* 슬라이드 */
+.slide {
     width: 1024px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
     margin: 0 auto;
 }
 
-.history > .history_txt {
-    margin: 50px auto;
+.slide .slide_box {
+    width: 4096px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
 
-.history > .history_txt > h2 {
+.slide .slide_box .boxs {
+    float: left;
+    width: 1024px;
+    height: 500px;
+    /* top: 0;
+    left: 0; */
+}
+
+#next {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    /* background: #252c41;
+    border-radius: 50px 50px; */
+}
+
+#back {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    cursor: pointer;
+    z-index: 11;
+    width: 500px;
+    height: 500px;
+    /* background: #252c41;
+    border-radius: 50px 50px; */
+}
+
+/* 미술관 역사(history) 텍스트 */
+.video_container > .history {
+    width: 1024px;
+    margin: 5px auto;
+}
+
+.history > .history_txt {
+    margin: 10px auto;
+}
+
+.history > .history_txt .box_1, .box_4 {
+    padding-top: 150px;
+}
+
+.history > .history_txt .box_3 {
+    padding-top: 100px;
+}
+
+.history > .history_txt .box_1 h2, .history > .history_txt .box_4 h2 {
     font-family: 'Fraunces', serif;
     font-size: 2em;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.history > .history_txt > h3 {
+.history > .history_txt .box_1 p, .history > .history_txt .box_4 p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.history > .history_txt .box_2 h3, .history > .history_txt .box_3 h3 {
     width: 500px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     font-size: 1.5em;
     line-height: 1.5em;
-    margin-top: 10px;
     border-bottom: 1px solid  #252c41;
-
 }
 
-.history > .history_txt > p {
+.history > .history_txt .box_2 p, .history > .history_txt .box_3 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     line-height: 1.5em;
     margin-top: 10px;
 }
 
-.history > .history_txt > p:first-of-type{
-    text-align: center;
-    font-size: 1.3em;
-}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            width: 1024px;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .slide ul {
+            width: 4096px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .slide ul li {
+            display: inline-block;
+            width: 1024px;
+            height: 600px;
+        }
+
+        #next {
+            position: absolute;
+            top: 250px;
+            left: 0;
+            cursor: pointer;
+            z-index: 1;
+            width: 300px;
+            height: 600px;
+            border: 1px solid black;
+        }
+
+        #back {
+            position: absolute;
+            top: 250px;
+            right: 0;
+            cursor: pointer;
+            z-index: 1;
+            width: 300px;
+            height: 600px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <ul>
+        <li>
+            <h2>History and the Three Museums</h2>
+            <p>The Harvard Art Museums are comprised of three separate museums—the Fogg Museum,
+                Busch-Reisinger Museum, and Arthur M. Sackler Museum—each with a different history,
+                collection, guiding philosophy, and identity.</p><br><br>
+        </li>
+        <li>
+            <h3>Fogg Museum</h3>
+            <p>The Fogg Museum opened in 1895 on the northern edge of Harvard Yard in a modest Beaux-Arts
+                building designed by Richard Morris Hunt, twenty-one years after the President and Fellows
+                of Harvard College appointed Charles Eliot Norton the first professor of art history in
+                America. It was made possible when, in 1891, Mrs. Elizabeth Fogg gave a gift in memory of
+                her husband to build “an Art Museum to be called and known as the William Hayes Fogg Museum
+                of Harvard College.” In 1927, the Fogg Museum moved to its home at 32 Quincy Street. <br />
+                Designed by architects Coolidge, Shepley, Bulfinch, and Abbott of Boston, the joint art
+                museum and teaching facility was the first purpose-built structure for the specialized
+                training of art scholars, conservators, and museum professionals in North America. With an
+                early collection that consisted largely of plaster casts and photographs, the Fogg Museum is
+                now renowned for its holdings of Western paintings, sculpture, decorative arts, photographs,
+                prints, and drawings dating from the Middle Ages to the present.</p><br><br>
+            <h3>Busch-Reisinger Museum</h3>
+            <p>The Busch-Reisinger Museum was founded in 1901 as the Germanic Museum. Unique among North
+                American museums, the Busch-Reisinger is dedicated to the study of all modes and periods of
+                art from central and northern Europe, with an emphasis on German-speaking countries. In 1921
+                the Germanic Museum moved to Adolphus Busch Hall, built partly with funds from Adolphus
+                Busch’s son-in-law, Hugo Reisinger, and in 1950 it was renamed the Busch-Reisinger Museum.
+                The museum moved again in 1991, this time to Werner Otto Hall at 32 Quincy Street, designed
+                by Gwathmey Siegel & Associates. Adolphus Busch Hall continues to house the founding
+                collection of plaster casts of medieval art and is the venue for concerts on its
+                world-renowned Flentrop pipe organ, while the Busch-Reisinger Museum’s holdings include
+                significant works of Austrian Secession art, German expressionism, 1920s abstraction, and
+                materials related to the Bauhaus. Other strengths include late-medieval sculpture and
+                eighteenth-century art. The museum also holds noteworthy postwar and contemporary art from
+                German-speaking Europe.</p><br><br>
+            <h3>Arthur M. Sackler Museum</h3>
+            <p>In 1912, Langdon Warner taught the first courses in Asian art at Harvard, and the first at
+                any American university. By 1977, Harvard’s collections of Asian, ancient, and Islamic and
+                later Indian art had grown sufficiently in size and importance to require a larger space for
+                their display and study. With the generosity of Dr. Arthur M. Sackler, a leading
+                psychiatrist, entrepreneur, art collector, and philanthropist, the Harvard Art Museums
+                founded a museum dedicated to works from Asia, the Middle East, and the Mediterranean. The
+                Arthur M. Sackler Museum, a new museum building at 485 Broadway designed by James Stirling,
+                opened in 1985. This structure remains the home of the History of Art and Architecture
+                Department and the Media Slide Library.</p><br><br>
+            
+        </li>
+        <li>
+            <h3>Renovation and Expansion</h3>
+            <p>The Harvard Art Museums’ recent renovation and expansion builds on the legacies of these
+                three museums and unites their remarkable collections under one roof for the first time.
+                Renzo Piano Building Workshop’s responsive design preserved the Fogg Museum’s landmark 1927
+                facility, while transforming the space to accommodate twenty-first-century needs. <br><br />
+                Following a six-year building project, the museums now feature 40 percent more gallery
+                space, an expanded Art Study Center, conservation labs, and classrooms, and a striking new
+                glass roof that bridges the facility’s historic and contemporary architecture. <br><br />
+                In line with Harvard’s commitment to sustainability, the museums’ renovation and expansion
+                achieved LEED Gold certification for incorporating a wide range of green building
+                technologies including, energy efficient LED bulbs and an innovative water conservation
+                system. The new Harvard Art Museums’ building is more functional, accessible, spacious, and
+                above all, more transparent. The three constituent museums retain their distinct identities
+                in this new facility, yet their close proximity provides exciting opportunities to
+                experience works of art in a broader context.</p>
+        </li>
+        </ul>
+        <div id="back"></div>
+        <div id="next"></div>
+    </div>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var boxs;
+            var box_count;
+            var box_position = 1;
+
+            boxs = $(".slide ul");
+            box_count = boxs.children().length;
+
+            //버튼을 클릭했을 때 함수 실행 
+
+            $('#back').click(function(){
+                next();
+            });
+            $('#next').click(function(){
+                back();
+            });
+
+            function back() {
+                if(1 <  box_position) {
+                    boxs.animate ({
+                        left:'+=1024px'
+                    });
+                    box_position--;
+                }
+            }
+            function next() {
+                if(box_count > box_position) {
+                    boxs.animate ({
+                        left:'-=1024px'
+                    });
+                    box_position++;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
