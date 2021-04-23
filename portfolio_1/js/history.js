@@ -1,3 +1,5 @@
+// 슬라이드
+
 $(document).ready(function(){
     var boxs;
     var box_count;
