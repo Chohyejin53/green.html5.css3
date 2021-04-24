@@ -30,3 +30,20 @@
 
         }
     });
+
+    $(window).resize(function() {
+        var width = $(window).width();
+
+        if(width > 1023) {
+            if ($(".mobile_menu").is(":visible")) {
+                $(".mobile.hamburger").show();
+                $(".mobile.close").hide();
+
+                $(".nav_wrap").height(390);
+                $("#content_wrap").show();
+                $("#footer_wrap").show();
+
+                $(".mobile_menu").hide();
+            }
+        }
+    });

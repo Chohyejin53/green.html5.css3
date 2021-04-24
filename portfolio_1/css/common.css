@@ -51,7 +51,7 @@
 
 .nav_wrap .trigger {
     float: right;
-    width: 23px;
+    width: 25px;
     text-align: right;
     padding-top: 30px;
     margin-right: 30px;
@@ -66,7 +66,6 @@
 .mobile_menu {
     display: none;
     background: #f4f5f9;
-    color: #252c41;
     height: 100vh;
     width: 100vw;
     overflow: hidden;  /* 뷰포트 스크롤 방지 */
@@ -75,7 +74,6 @@
 }
 
 .mobile_menu .mobile_gnb {
-    color: #252c41;
     height: 100vh;
     width: 100vw;
     margin: 0 auto;
@@ -83,13 +81,18 @@
 
 .mobile_gnb li {
     text-align: center;
-    margin: 30px auto;
+    margin: 80px auto;
+    
 }
 
 .mobile_gnb a {
     font-family: 'Fraunces', serif;
     font-size: 3em;
     color: #252c41;
+}
+
+.mobile_gnb a:hover {
+    color: #f1404b;
 }
 
 /* 푸터 */
@@ -100,33 +103,82 @@
 #main_footer {
     width: 1024px;
     margin: 10px auto;
-    height: 120px;
+    height: 250px;
     overflow: hidden;
-}
-
-#main_footer > .bottom_logo {
-    float: left;
-    margin: 20px 30px;
-    width: 250px;
-}
-
-#main_footer > .bottom_logo > img {
-    width: 250px;
-    height: 100px;
 }
 
 #main_footer > .sns {
-    width: 600px;
+    width: 1024px;
     float: left;
     overflow: hidden;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .sns > li {
     float: left;
-    width: 25%;
+    width: 24.8%;
     text-align: center;
+    border: 1px solid #252c41;
+    padding: 5px 0;
 }
+
+.sns > li:hover {
+    background: #252c41;
+    color: #f4f5f9;
+}
+
+.sns > li:nth-child(2),li:nth-child(3), li:nth-child(4) {
+    border-left: none;
+}
+
+#main_footer > .bottom_info {
+    width: 1024px;
+    overflow: hidden;
+}
+
+.bottom_info > .bottom_left {
+    float: left;
+    width: 49.7%;
+    border-bottom: 1px solid #252c41;
+    border-left: 1px solid #252c41;
+    border-right: 1px solid #252c41;
+}
+
+.bottom_info > .bottom_left > img {
+    width: 250px;
+    height: 100px;
+    margin: 0px 20px;
+}
+
+.bottom_info > .bottom_right {
+    float: left;
+    height: 100px;
+    width: 49.8%;
+    background: #252c41;
+    border-bottom: 1px solid #252c41;
+}
+
+.bottom_right > .newsletter_box {
+    width: 200px;
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-style: italic;
+    background: #f4f5f9;
+    color: #f1404b;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.bottom_right > p {
+    font-family: 'Fraunces', serif;
+    color: #f4f5f9;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}    
+
+
+
 
 
 /* 미디어 쿼리 */
@@ -159,15 +211,4 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .gnb ul {
-        display: block;
     }
-
-    .nav_wrap .trigger {
-        display: none;
-    }
-
-    .mobile_gnb {
-        display: none;
-    }
-}

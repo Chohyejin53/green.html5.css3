@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harvard Art Museums</title>
-    <!-- 폰트어썸 CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- css 링크 -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/history.css">
@@ -27,8 +25,12 @@
                     <li><a href="#">Object</a></li>
                 </ul>
                 <div class="trigger">
-                    <a href="#" class="mobile hamburger"><i class="fas fa-bars fa-lg"></i></a>
-                    <a href="#" class="mobile close"><i class="fas fa-times fa-lg"></i></a>
+                    <a href="#" class="mobile hamburger">
+                        <img src="images/bars-solid.svg" alt="햄버거바">
+                    </a>
+                    <a href="#" class="mobile close">
+                        <img src="images/times-solid.svg" alt="닫기">
+                    </a>
                 </div>
             </nav>
         </header>
@@ -111,19 +113,26 @@
                 </div>
             </div>
         </div>
-    <div id="footer_wrap">
-        <footer id="main_footer">
-            <div class="bottom_logo">
-            <img src="images/bottom_logo.svg" alt="로고">
-            </div>
-            <ul class="sns">
-                <li><a href="#">instargram</a></li>
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">youtube</a></li>
-                <li><a href="#">facebook</a></li>
-            </ul>
-        </footer>
-    </div>
+        <div id="footer_wrap">
+            <footer id="main_footer">
+                <ul class="sns">
+                    <li><a href="#">instargram</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">youtube</a></li>
+                    <li><a href="#">facebook</a></li>
+                </ul>
+                <div class="bottom_info">
+                    <div class="bottom_left">
+                    <img src="images/bottom_logo.svg" alt="로고">
+                    </div>
+                    <div class="bottom_right">
+                        <div class="newsletter_box">
+                            <a href="#">Newsletter</a></div> 
+                        <p>Sign up to get the latest news</p>  
+                    </div>
+                </div>
+            </footer>
+        </div>
 
     <!-- 모바일메뉴 -->
     <div class="mobile_menu">
@@ -137,7 +146,7 @@
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/history.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
