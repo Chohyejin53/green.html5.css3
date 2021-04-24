@@ -120,3 +120,15 @@ iframe {
     margin-top: 10px;
 }
 
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

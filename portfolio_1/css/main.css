@@ -63,7 +63,7 @@
 .intro_wrap > .message > .message_txt {
     float: left;
     width: 500px;
-    margin: 50px 10px;
+    margin: 0 auto;
 }
 
 .intro_wrap > .message > .message_txt > h2 { 
@@ -83,7 +83,42 @@
 .intro_wrap > .message > .message_img {
     float: left;
     width: 500px;
-    margin: 100px 0px 100px auto;
+    margin: 0 auto;
 }
 
 
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+    .intro_wrap > .message {   
+        width: 100vw;
+        min-width: 500px;
+    }
+
+    .intro_wrap > .message .message_txt {
+        float: none;
+    }
+    .intro_wrap > .message .message_img {
+        float: none;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .intro_wrap > .message {   
+        width: 90vw;
+    }
+
+    .intro_wrap > .message .message_txt {
+        float: none;
+        width: 90vw;
+    }
+    .intro_wrap > .message .message_img {
+        float: none;
+        width: 50vw;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

@@ -26,11 +26,12 @@
 
 .main_header > .nav_wrap {
     float: right;
-    width: 300px;
     margin-top: 20px;
 }
 .nav_wrap > .gnb {
     overflow: hidden;
+    width: 300px;
+    display: block;
 }
 
 .gnb > li {
@@ -48,6 +49,19 @@
     color: #f1404b;
 }
 
+.nav_wrap .trigger {
+    float: right;
+    width: 23px;
+    text-align: right;
+    padding-top: 30px;
+    margin-right: 30px;
+    display: none;
+}
+
+.nav_wrap .trigger .close {
+    display: none;
+}
+
 /* 푸터 */
 #footer_wrap {
     width: 100%;
@@ -55,8 +69,8 @@
 
 #main_footer {
     width: 1024px;
-    margin: 0 auto;
-    height: 200px;
+    margin: 10px auto;
+    height: 120px;
     overflow: hidden;
 }
 
@@ -82,4 +96,44 @@
     float: left;
     width: 25%;
     text-align: center;
+}
+
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+    .nav_wrap .gnb {
+        display: none;
+    }
+
+    .gnb ul {
+        display: none;
+    }
+
+    .nav_wrap .trigger {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .nav_wrap .gnb {
+        display: none;
+    }
+
+    .gnb ul {
+        display: none;
+    }
+
+    .nav_wrap .trigger {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .gnb ul {
+        display: block;
+    }
+
+    .nav_wrap .trigger {
+        display: none;
+    }
 }
