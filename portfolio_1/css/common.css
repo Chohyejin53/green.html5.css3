@@ -122,7 +122,12 @@
     padding: 5px 0;
 }
 
-.sns > li:hover {
+.sns a {
+    display: block;
+    color: #252c41;
+}
+
+.sns li:hover,a:hover  {
     background: #252c41;
     color: #f4f5f9;
 }
@@ -167,6 +172,17 @@
     color: #f1404b;
     text-align: center;
     margin: 15px auto;
+}
+
+.bottom_right a {
+    display: block;
+    background: #f4f5f9;
+    color: #f1404b;
+}
+
+.bottom_right a:hover {
+    background: #f4f5f9;
+    color: #f1404b;
 }
 
 .bottom_right > p {
