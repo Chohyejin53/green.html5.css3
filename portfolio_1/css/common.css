@@ -122,13 +122,12 @@
     padding: 5px 0;
 }
 
-.sns a {
+#main_footer .sns a {
     display: block;
     color: #252c41;
 }
 
-.sns li:hover,a:hover  {
-    background: #252c41;
+.sns li:hover, a:hover  {
     color: #f4f5f9;
 }
 
