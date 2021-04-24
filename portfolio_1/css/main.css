@@ -7,7 +7,7 @@
 }
 
 #main_content > .logo_wrap {
-    width: 1024px;
+    /* width: 1024px; */
     margin: 0 auto;
 }
 
@@ -25,6 +25,8 @@
     width: 700px;
     height: auto;
     margin: 20% auto;
+    background: yellow;
+    z-index: -99;
 }
 
 .logo > .logo_text {
@@ -63,7 +65,7 @@
 .intro_wrap > .message > .message_txt {
     float: left;
     width: 500px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .intro_wrap > .message > .message_txt > h2 { 
@@ -89,21 +91,72 @@
 
 /* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
+    /* 메인 비주얼 이미지 및 텍스트 */
+
+    #main_content > .logo_wrap {
+        width: 90vw;
+    }
+
+    .logo_wrap > .main_logo {
+        width: 90vw;
+        min-width: 300px;
+    }
+
+    .logo > .main_img {
+        width: calc(700px - 10%);
+    }
+
+    .logo > .logo_text {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .logo > .logo_text > h1 {
+        font-size: 3em;
+        line-height: 100px;
+    }
+
+
+    /* 소개 */
     .intro_wrap > .message {   
-        width: 100vw;
-        min-width: 500px;
+        width: 90vw;
     }
 
     .intro_wrap > .message .message_txt {
         float: none;
+        min-width: 300px;
     }
+
+    .intro_wrap > .message .message_txt h2 {
+        width: 100vw;
+    }
+    .intro_wrap > .message .message_txt p {
+        width: 100vw;
+    }
+
     .intro_wrap > .message .message_img {
         float: none;
         width: 250px;
+        min-width: 300px;
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* 메인 비주얼 이미지 및 텍스트 */
+    #main_content > .logo_wrap {
+        width: 90vw;
+    }
+
+    .logo > .main_img {
+        width: calc(700px - 10%);
+    }   
+    .logo > .logo_text > h1 {
+        font-size: 4.5em;
+        line-height: 200px;
+    }
+
+    /* 소개 */
     .intro_wrap > .message {   
         width: 90vw;
     }
@@ -115,10 +168,16 @@
     .intro_wrap > .message .message_img {
         float: none;
         width: 50vw;
-        margin: 15px auto;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    
+    /* 메인 비주얼 이미지 및 텍스트 */
+    #main_content > .logo_wrap {
+        width: 1024px;
+    } 
+
+    .logo > .main_img {
+        width: 700px;
+    }
 }

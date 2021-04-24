@@ -62,6 +62,36 @@
     display: none;
 }
 
+/* 모바일 메뉴 */
+.mobile_menu {
+    display: none;
+    background: #f4f5f9;
+    color: #252c41;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;  /* 뷰포트 스크롤 방지 */
+    position: fixed;   /* 뷰포트 스크롤 방지 */
+    top: 120px;
+}
+
+.mobile_menu .mobile_gnb {
+    color: #252c41;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.mobile_gnb li {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.mobile_gnb a {
+    font-family: 'Fraunces', serif;
+    font-size: 3em;
+    color: #252c41;
+}
+
 /* 푸터 */
 #footer_wrap {
     width: 100%;
@@ -134,6 +164,10 @@
     }
 
     .nav_wrap .trigger {
+        display: none;
+    }
+
+    .mobile_gnb {
         display: none;
     }
 }
