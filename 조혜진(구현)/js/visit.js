@@ -5,6 +5,12 @@ nowYear = today.getFullYear();
 nowMonth = monthNames[today.getMonth()];
 nowDate = today.getDate();
 
-console.log(nowYear);
-console.log(nowMonth);
-console.log(nowDate);
+// console.log(nowYear);
+// console.log(nowMonth);
+// console.log(nowDate);
+
+$(".current_year").append(nowYear);
+$(".now_month").append(nowMonth);
+$(".now_date").append(nowDate);
+
+

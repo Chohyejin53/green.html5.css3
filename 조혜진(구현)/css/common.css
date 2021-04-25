@@ -1,7 +1,12 @@
 @charset "UTF-8";
 @import url(reset.css); 
+
 *, a {
     color: #252c41;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* 헤더 */

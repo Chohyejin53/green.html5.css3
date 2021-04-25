@@ -11,6 +11,7 @@
                 $(".nav_wrap").height(120);
                 $("#content_wrap").hide();
                 $("#footer_wrap").hide();
+                $(".main_header").css({"background-color":"#f4f5f9"});
 
                 $(".mobile_menu").show();
 
@@ -23,6 +24,7 @@
             $(".nav_wrap").height(390);
             $("#content_wrap").show();
             $("#footer_wrap").show();
+            $(".main_header").css({"background":"none"});
             $(".mobile_menu").hide();
             }
         }, 

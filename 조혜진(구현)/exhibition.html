@@ -7,9 +7,16 @@
     <title>Harvard Art Museums</title>
     <!-- css 링크 -->
     <link rel="stylesheet" href="css/common.css">
-    <!-- 폰트 -->
+    <link rel="stylesheet" href="css/exhibition.css">
+    <!-- library -->
+    <link rel="stylesheet" href="library/owl.carousel.min.css">
+    <link rel="stylesheet" href="library/owl.theme.default.min.css">
+    <!-- gnb메뉴 / 소개 헤더 -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap" rel="stylesheet">
+    <!-- 기본 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <body>
     <div id="header_wrap">
         <header class="main_header">
@@ -35,36 +42,13 @@
         </header>
     </div>
     <div id="content_wrap">
-        <div class="date">
-            <div class="today_date"></div>
-            <div class="color_bar"></div>
-        </div>
-        <div class="oping_hours">
-            <h2>Open daily 10am–5pm</h2>
-            <h2>Closed on major holidays</h2>
-        </div>
-        <div class="notice">
-            <p>The Harvard Art Museums remain closed as a cautionary measure in response to the COVID-19 pandemic. In accordance with Harvard University, we are currently formulating a comprehensive re-opening plan that prioritizes the safety of the community and the museums’ staff.<br>
-                In the meantime, we will always be here for you online! Find live events, programs, videos, articles, staff picks, learning opportunities, collections, and inspiration on our Harvard Art Museums from Home page.</p>
-        </div>
-        <div class="tickets">
-            <h2>Tickets</h2>
-            <ul>
-                <li><span>$20</span><span>Adults</span></li>
-                <li><span>$18</span><span>Seniors (65+)</span></li>
-                <li><span>Free </span><span>All students with a valid ID</span></li>
-                <li><span>Free </span><span>Harvard ID holders (plus one guest)</span></li>
-                <li><span>Free </span><span>Harvard Art Museums Friends</span></li>
-                <li><span>Free </span><span>Youth under 18</span></li>
-                <li><span>Free </span><span>Cambridge residents (proof of residency required) Additional free admission opportunities</span></li>
-            </ul>
-        </div>
-        <div class="access">
-            <div class="access_img">
-                <img src="images/museums_accessibility.jpeg" alt="미술관 사진">
+        <div class="main_content">
+            <div class="current_ex">
+                <h2>Current Exhibition</h2>
             </div>
-            <div class="access_description">
-                
+            <div class="upcoming_ex">
+                <h2>Upcoming<br>
+                    Exhibition</h2>
             </div>
         </div>
     </div>
@@ -101,7 +85,10 @@
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/visit.js"></script>
+    <script src="js/common.js"></script>
+    <script src="library/owl.carousel.js"></script>
+    <script src="library/owl.autoplay.js"></script>
+    <script src="library/owl.navigation.js"></script>
+
 </body>
 </html>
