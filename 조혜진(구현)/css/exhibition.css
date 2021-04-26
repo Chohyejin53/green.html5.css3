@@ -5,6 +5,7 @@
     width: 100%;
 }
 
+/* 현재전시 */
 #content_wrap > .main_content {
     width: 100%;
     background: #f4f5f9;
@@ -29,3 +30,49 @@
 }
 
 
+/* 예정된 전시 */
+#content_wrap > .sub_content {
+    margin: 30px auto;
+    width: 100%;
+}
+
+#content_wrap > .sub_content > .upcoming_ex {
+    width: 1024px;
+    margin: 0 auto;
+    height: 200px;
+    overflow: hidden;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_tit {
+    float: left;
+    width: 20%;
+    margin: 30px 10px;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_tit > h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: right;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_plan {
+    float: left;
+    width: 20%;
+    margin: 30px 10px;
+    padding: 15px 15px 15px 0px;
+    border-right: 1px solid #252c41;
+    border-bottom: 1px solid #252c41;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_plan > h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_plan > p {
+    font-family: 'Fraunces', serif;
+    font-size: 1.2em;
+    text-align: right;
+}
