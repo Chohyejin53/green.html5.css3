@@ -29,6 +29,18 @@ p {
     margin-left: 30px;
 }
 
+.main_header > #title:hover {
+    animation: rint 10s linear none infinite alternate;
+    transform-origin: 50% 50%;
+}
+    
+@keyframes rint {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 .main_header > .nav_wrap {
     float: right;
     margin-top: 20px;
