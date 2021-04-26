@@ -1,0 +1,40 @@
+#content_wrap {
+    width: 100%;
+}
+
+#content_wrap > .main_content {
+    width: 1024px;
+    margin: 0 auto;
+    height: 800px;
+    overflow: hidden;
+}
+
+#content_wrap > .main_content > .object_tit {
+    padding-top: 20px;
+}
+
+#content_wrap > .main_content > .object_tit > h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#content_wrap > .main_content > .color_chart {
+    width: 80%;
+}
+
+
+#content_wrap > .main_content > .grid {
+    overflow: hidden;
+    width: 1024px;
+    margin: 10px;
+}
+
+#content_wrap > .main_content > .grid > .grid-item {
+    float: left;
+    background: lightblue;
+    margin: 5px;
+    width: 20%;
+    height: 100px;
+}
