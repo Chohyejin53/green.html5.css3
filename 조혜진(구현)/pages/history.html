@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harvard Art Museums</title>
     <!-- css 링크 -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/history.css">
     <!-- gnb메뉴 / 소개 헤더 -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap" rel="stylesheet">
     <!-- 기본 텍스트 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <body>
+    <body id="wrapper">
     <div id="header_wrap">
         <header class="main_header">
             <div id="title">
@@ -39,8 +39,8 @@
         </header>
     </div>
     <div id="content_wrap">
-        <div class="video_container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NfLTCEfxEFE?autoplay=1&mute=1&loop=1&autohide=1&controls=0&modestbranding=1&color=white&start=6&end=100&rel=0&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <div class="video_container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NfLTCEfxEFE?autoplay=1&mute=1&loop=1&autohide=1&controls=0&modestbranding=1&color=white&start=6&end=100&rel=0&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             <div class="history">
                 <div class="history_txt slide">
                     <div class="slide_box">
@@ -148,9 +148,10 @@
     </div>
 
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/history.js"></script>
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../library/jquery.tubular.1.0.js"></script>
+    <script src="../js/history.js"></script>
     
 </body>
 </html>

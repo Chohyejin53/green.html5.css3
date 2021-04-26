@@ -1,3 +1,14 @@
+// 배경
+$("document").ready(function(){                
+    var options = {
+        videoId : 'NfLTCEfxEFE',
+        start: 6,
+        wrapperZIndex: 99,
+    };
+    $("#wrapper").tubular(options);
+});
+
+
 // 슬라이드
 
 $(document).ready(function(){
@@ -34,4 +45,3 @@ $(document).ready(function(){
         }
     }
 });
-
