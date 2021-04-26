@@ -6,15 +6,26 @@
 }
 
 #content_wrap > .main_content {
-    width: 1024px;
-    margin: 0 auto;
+    width: 100%;
+    background: #f4f5f9;
 }
 
 #content_wrap > .main_content > .current_ex {
     width: 1024px;
+    margin: 0 auto;
     background: #f4f5f9;
     height: 400px;
 }
 
+#content_wrap > .main_content > .current_ex > .ex_tit {
+    padding-top: 20px;
+}
+
+#content_wrap > .main_content > .current_ex > .ex_tit > h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
 
 
