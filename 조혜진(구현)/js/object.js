@@ -28,7 +28,7 @@
         type: 'pie',
         data: data,
         options: {
-            responsive: false,
+            responsive: true,
             plugins: {
                 legend: false,
                 title: {
@@ -49,7 +49,7 @@
     );
     
     /*
-     이벤트 참고- https://stackoverflow.com/questions/46672925/chart-js-onclick-event-with-a-mixed-chart-which-chart-did-i-click
+    이벤트 참고- https://stackoverflow.com/questions/46672925/chart-js-onclick-event-with-a-mixed-chart-which-chart-did-i-click
     */
     function chartClickEvent(event, array){
         console.log(array);
@@ -61,12 +61,3 @@
     
 
 
-    //img 분류 보여주기
-    $('.grid').isotope({
-        // options...
-        itemSelector: '.grid-item',
-        layoutMode: 'fitRows'
-        masonry: {
-        columnWidth: 200
-        }
-    });
