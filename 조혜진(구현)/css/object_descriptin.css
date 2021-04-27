@@ -15,18 +15,6 @@
     overflow: hidden;
 }
 
-#content_wrap > .main_content > .object_tit {
-    padding-top: 20px;
-    margin-bottom: 20px;
-}
-
-#content_wrap > .main_content > .object_tit > h2 {
-    font-family: 'Fraunces', serif;
-    font-size: 3.5em;
-    font-weight: bolder;
-    text-align: center;
-}
-
 #content_wrap > .main_content > .object_img {
     float: left;
     width: 49%;
@@ -36,6 +24,7 @@
 #content_wrap > .main_content > .object_description {
     float: left;
     width: 49%;
+    height: auto;
     margin: 20px auto;
 }
 
@@ -44,11 +33,24 @@
     overflow: hidden;
 }
 
+#content_wrap > .main_content > .object_description > .object_tit {
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+#content_wrap > .main_content  > .object_description > .object_tit > h2 {
+    padding-left: 40px;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: left;
+}
 #content_wrap > .main_content > .object_description > .description >  .des_left {
     float: left;
     width: 20%;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 #content_wrap > .main_content > .object_description > .description >  .des_left > p {
@@ -62,7 +64,7 @@
     float: left;
     width: 70%;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 #content_wrap > .main_content > .object_description > .description >  .des_right > p {
