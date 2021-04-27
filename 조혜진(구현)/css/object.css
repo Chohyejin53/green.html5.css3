@@ -6,7 +6,7 @@
 #content_wrap > .main_content {
     width: 1024px;
     margin: 0 auto;
-    height: 800px;
+    height: auto;
     overflow: hidden;
     background: #f4f5f9;
 }
@@ -29,3 +29,20 @@
 }
 
 
+/* 이미지 */
+
+#content_wrap > .main_content > .object_img {
+    margin: 20px auto;
+    display: block;
+}
+
+#content_wrap > .main_content > .object_img > .img_sort {
+    margin: 3px auto; 
+    overflow: hidden;
+}
+
+#content_wrap > .main_content > .object_img > .img_sort > .img_col {
+    float: left;
+    margin: 1px;
+    width: 24%;
+}
