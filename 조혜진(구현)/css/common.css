@@ -115,13 +115,14 @@ p {
 /* 푸터 */
 #footer_wrap {
     width: 100%;
+    margin: 20px auto;
 }
 
 #main_footer {
     width: 1024px;
     margin: 0 auto;
     padding: 10px auto;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -149,10 +150,6 @@ p {
     color: #f4f5f9;
 }
 
-.sns > li:nth-child(2),li:nth-child(3), li:nth-child(4) {
-    border-left: none;
-}
-
 #main_footer > .bottom_info {
     width: 1024px;
     overflow: hidden;
@@ -161,9 +158,9 @@ p {
 .bottom_info > .bottom_left {
     float: left;
     width: 49.7%;
-    border-bottom: 1px solid #252c41;
+    /* border-bottom: 1px solid #252c41;
     border-left: 1px solid #252c41;
-    border-right: 1px solid #252c41;
+    border-right: 1px solid #252c41; */
 }
 
 .bottom_info > .bottom_left > img {
@@ -228,6 +225,42 @@ p {
     .nav_wrap .trigger {
         display: block;
     }
+
+    #main_footer {
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #main_footer > .sns {
+        width: 90vw;
+        float: left;
+    }
+
+    .sns > li {
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    #main_footer > .bottom_info {
+        width: 90vw;
+    }
+
+    .bottom_info > .bottom_left {
+        float: none;
+        width: 100%;
+        border: 1px solid #252c41;
+    }
+    
+    .bottom_info > .bottom_right {
+        float: none;
+        height: 100px;
+        width: 100%;
+        background: #252c41;
+        border-bottom: 1px solid #252c41;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -242,7 +275,47 @@ p {
     .nav_wrap .trigger {
         display: block;
     }
+
+        
+    #main_footer {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    #main_footer > .sns {
+        width: 90vw;
+        float: left;
+    }
+
+    .sns > li:nth-child(2),li:nth-child(3), li:nth-child(4) {
+        border-left: none;
+    }
+
+    #main_footer > .bottom_info {
+        width: 90vw;
+    }
+    
+
+    .bottom_info > .bottom_left {
+        float: left;
+        width: 49.7%;
+        border-bottom: 1px solid #252c41;
+        border-left: 1px solid #252c41;
+        border-right: 1px solid #252c41;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+
+    .sns > li:nth-child(2),li:nth-child(3), li:nth-child(4) {
+        border-left: none;
+    }
+
+    .bottom_info > .bottom_left {
+        float: left;
+        width: 49.7%;
+        border-bottom: 1px solid #252c41;
+        border-left: 1px solid #252c41;
+        border-right: 1px solid #252c41;
+    }
     }
