@@ -48,7 +48,7 @@
     float: left;
     width: 20%;
     padding-left: 20px;
-
+    margin-bottom: 20px;
 }
 
 #content_wrap > .main_content > .object_description > .description >  .des_left > p {
@@ -62,7 +62,7 @@
     float: left;
     width: 70%;
     padding-left: 20px;
-
+    margin-bottom: 20px;
 }
 
 #content_wrap > .main_content > .object_description > .description >  .des_right > p {
