@@ -119,6 +119,7 @@ p {
 
 #main_footer {
     width: 1024px;
+    margin: 0 auto;
     padding: 10px auto;
     height: 250px;
     overflow: hidden;
