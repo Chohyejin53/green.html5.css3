@@ -36,13 +36,49 @@
     display: block;
 }
 
-#content_wrap > .main_content > .object_img > .img_sort {
-    margin: 3px auto; 
-    overflow: hidden;
+#content_wrap > .main_content > .columns {
+    /* 컬럼 개수가 2개로 유지됨  
+    프리픽스 함께 써야함! (지원하지 않는 웹브라우저를 위해!)
+    */
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+
+    column-count: 2;    
+    column-gap: 10px;
 }
 
-#content_wrap > .main_content > .object_img > .img_sort > .img_col {
-    float: left;
-    margin: 1px;
-    width: 24%;
+#content_wrap > .main_content > .columns > .columns_img {
+    margin: 3px auto; 
+    display: inline-block;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #content_wrap > .main_content {
+        width: 90vw;
+    }
+
+    #content_wrap > .main_content > .object_img > .columns {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;    
+        }
+    }
+    
+@media screen and (min-width: 1024px) {
+    #content_wrap > .main_content {
+        width: 1024px;
+    }
+
+    #content_wrap > .main_content > .object_img > .columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;    
+    }
 }
