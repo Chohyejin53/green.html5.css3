@@ -1,5 +1,6 @@
 #content_wrap {
     width: 100%;
+    background: #f4f5f9;
 }
 /* 타이틀 */
 #content_wrap > .main_content {
@@ -7,10 +8,11 @@
     margin: 0 auto;
     height: 800px;
     overflow: hidden;
+    background: #f4f5f9;
 }
 
 #content_wrap > .main_content > .object_tit {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 #content_wrap > .main_content > .object_tit > h2 {
