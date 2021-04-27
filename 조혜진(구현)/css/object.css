@@ -56,7 +56,15 @@
 
 /* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
+    #content_wrap > .main_content {
+        width: 90vw;
+    }
 
+    #content_wrap > .main_content > .object_img > .columns {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;    
+        }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
